@@ -1,0 +1,5 @@
+<hr/>
+<input type="number" #txtnumber (change)="OnChange(txtnumber.value)">
+
+<br/>
+<app-child-comp [Name]="txtNumberValue" (OutputName)="OnOutputReciver($event)" ></app-child-comp>

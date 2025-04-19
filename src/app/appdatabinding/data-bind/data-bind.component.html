@@ -1,0 +1,6 @@
+<p>{{UserName}}</p>
+<input type="text" [(ngModel)]="UserName">
+<br/>
+<input type="button" value="Click" (click)="onUserClick()" >
+<br/>
+<input type="button" value="Click" [disabled]="UserName.length==0" (click)="onUserClick()" >
